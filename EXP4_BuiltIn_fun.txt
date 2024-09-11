@@ -1,0 +1,58 @@
+desc dual;
+select * from dual;
+
+
+-- NUMBER FUNCTION:
+Select abs(-45.2) from dual;
+select exp(3) from dual;
+select power(4,3) from dual;
+select mod (10,3) from dual;
+select round(15.6564,3) from dual;
+select trunc(290.76) from dual;
+Select sqrt(16) from dual;
+
+
+--CHARACTER FUNCTION:
+
+select initcap('hello') from dual;
+select lower ('VRUSHALI') from dual;
+select upper ('madiha') from dual;
+
+select ltrim ('HELLO','HE') from dual;
+
+select rtrim ('HELLO','LLO') from dual;
+
+select replace('Veushali and Madiha','e','r') from dual;
+
+
+--STRING FUNCTIONS:
+
+SELECT CONCAT('Vrushali','Nikam')FROM DUAL;
+SELECT LPAD('Madiha',20,'#@')FROM DUAL;
+SELECT RPAD('Madiha',20,'#@')FROM DUAL;
+
+SELECT ltrim('MadihaVrushali','Madiha')FROM DUAL;
+SELECT rtrim('MadihaVrushali','rushali')FROM DUAL;
+
+SELECT lower('MadihaVrushali')FROM DUAL;
+SELECT upper('MadihaVrushali')FROM DUAL;
+
+SELECT length('MadihaVrushali')FROM DUAL;
+SELECT substr('MadihaVrushali',3,7)FROM DUAL;
+SELECT instr('MadihaVrushali','ali',3,7)FROM DUAL;
+SELECT INSTR('CORPORATE FLOOR','OR',3,2)FROM DUAL;
+
+
+--DATE FUNCTIONS:
+
+ SELECT SYSDATE FROM DUAL;
+ SELECT NEXT_DAY(SYSDATE,'sun')FROM DUAL;
+  SELECT ADD_MONTHS(SYSDATE,2)FROM DUAL;
+ SELECT LAST_DAY(SYSDATE)FROM DUAL;
+ SELECT MONTHS_BETWEEN(SYSDATE,HIREDATE)FROM EMP;
+
+SELECT TRUNC(SYSDATE,'DAY')FROM DUAL; 
+ SELECT ROUND(SYSDATE,'DAY')FROM DUAL;  
+ 
+select * from Emp;
+select * from tab;
